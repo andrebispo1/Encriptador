@@ -7,7 +7,7 @@
 }
 .logo {
     margin-left: 15px;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 2%;
 }
 main{
@@ -43,7 +43,7 @@ main{
     }
     .botoes {
         display: flex;
-        margin-top: 18px;
+        margin-top: 60px;
         
        
     }
@@ -82,7 +82,7 @@ main{
         color: #0A3871;
         border-color: #0A3871;
         position: fixed;
-        margin-top: 450px;
+        margin-top: 440px;
         margin-left: 120px;
         width: 320px;
         cursor: pointer;

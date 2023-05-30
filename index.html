@@ -23,15 +23,15 @@
                 <h6>Apenas letras minusculas e sem acentos.</h6>
             </div>
             <div class="botoes">
-                <button class="btn-principal">Criptografar</button>
-                <button class="btn-descriptografar">Descriptografar</button>
+                <button class="btn-principal" onclick="btnPrincipal()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
             </div>
 
         </section>
 
         <section>
-            <textarea  cols="20" rows="10" class="mensagem"></textarea>
-            <button class="copiar">copiar</button>
+            <textarea  cols="20" rows="10" class="mensagem" id="mensagem" disabled></textarea>
+            <button class="copiar" onclick="btnCopiar()" >copiar</button>
 
 
         </section>
