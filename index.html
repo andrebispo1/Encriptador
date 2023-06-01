@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuração da media query-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <!-- link das Fontes utilizada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -17,7 +21,7 @@
     </header>
     <main>
          
-        <section>
+        <section class="entradaText">
             <textarea  cols="41" rows="4" class="text-area" placeholder="Digite sua mensagem"></textarea>
             <div class="info">
                 <h6>Apenas letras minusculas e sem acentos.</h6>
@@ -29,7 +33,7 @@
 
         </section>
 
-        <section>
+        <section class="saidaText">
             <textarea  cols="20" rows="10" class="mensagem" id="mensagem" disabled></textarea>
             <button class="copiar" onclick="btnCopiar()" >copiar</button>
 
@@ -37,6 +41,6 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+   
 </body>
 </html>

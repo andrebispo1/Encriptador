@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -93,3 +94,131 @@ main{
         margin-bottom: 15px;
         margin-top: 60px;
     }
+    
+    /* Responsividade do site */
+@media screen and (max-width:480px) {
+    * {
+        box-sizing: border-box;
+        
+       
+       
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        margin-left: 0;
+        
+    }
+   
+    main{
+        display: block;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .text-area{
+        height: 100px;
+        width: 100%;
+    }
+    .logo {
+        margin-left: 0;
+       
+    }
+    .botoes{
+        display: block;
+
+    }
+    .btn-principal {
+        margin-left: 0px;
+        width: 100%;
+       
+    }
+    .btn-descriptografar{
+        margin-left: 0px;
+        margin-top: 5px;
+        width: 100%;
+        
+    
+    }
+
+    .mensagem {
+        height: 250px;
+        position: static;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        
+        
+
+    }
+    .copiar {
+        margin-top: 0;
+        margin-left: 0;
+        position: static;
+        width: 100%;
+    }
+    }
+    @media screen and (max-width:900px) {
+        * {
+            box-sizing: border-box;
+            
+           
+           
+        }
+        header{
+            padding: 0;
+            margin: 0;
+            margin-left: 0;
+            
+        }
+       
+        main{
+            display: block;
+            padding: 0;
+            margin: 0;
+            
+        }
+        .text-area{
+            height: 100px;
+            width: 100%;
+        }
+        .logo {
+            margin-left: 0;
+           
+        }
+        .botoes{
+            display: block;
+    
+        }
+        .btn-principal {
+            margin-left: 0px;
+            width: 100%;
+           
+        }
+        .btn-descriptografar{
+            margin-left: 0px;
+            margin-top: 5px;
+            width: 100%;
+            
+        
+        }
+    
+        .mensagem {
+            height: 450px;
+            position: static;
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+            
+            
+    
+        }
+        .copiar {
+            margin-top: 0;
+            margin-left: 0;
+            position: static;
+            width: 100%;
+        }
+        
+       
+}

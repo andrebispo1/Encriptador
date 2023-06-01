@@ -8,17 +8,27 @@ const mensagem = document.querySelector(".mensagem");
 // `A letra "o" é convertida para "ober"`
 // `A letra "u" é convertida para "ufat"`
 
+// Coloca fundo  branco quando value .mensagem não estiver vazio
 
 function fundo(){
     document.getElementById("mensagem").style.background="white";
 }
 
+//Volta a imagem no bg .mensagem quando value estiver vazio...
+
+function mensagemImg(){
+    if(mensagem.value){
+        
+    }else{
+        document.getElementById("mensagem").style.background="";
+    }}
 
 function btnPrincipal() {
     
     const textoEncriptado = encriptar(textArea.value);
     mensagem.value = textoEncriptado;
     fundo();
+    mensagemImg();
     textArea.value = "";
 }
 
@@ -42,6 +52,7 @@ function btnDescriptografar() {
     const textoDesencriptado = desencriptar(textArea.value);
     mensagem.value = textoDesencriptado;
     fundo();
+    mensagemImg();
     textArea.value = "";
 }
 
@@ -64,7 +75,6 @@ function btnCopiar() {
     
     var copiar = mensagem.value;
     navigator.clipboard.writeText(copiar);
-
     document.getElementById("mensagem").style.background="";
     mensagem.value = "";
 }
