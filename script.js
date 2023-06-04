@@ -1,6 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector(".mensagem");
 
+
 // As "chaves" de criptografia que utilizaremos são:
 // `A letra "e" é convertida para "enter"`
 // `A letra "i" é convertida para "imes"`
@@ -10,25 +11,31 @@ const mensagem = document.querySelector(".mensagem");
 
 // Coloca fundo  branco quando value .mensagem não estiver vazio
 
-function fundo(){
-    document.getElementById("mensagem").style.background="white";
-}
+
 
 //Volta a imagem no bg .mensagem quando value estiver vazio...
 
-function mensagemImg(){
+function fundoTexto(){
+
+    const checked1 = document.getElementById("btnInput");
+    const checked2 = checked1.checked;
     if(mensagem.value){
-        
+
+        if(checked2){
+            document.getElementById("mensagem").style.background="#4b4b4b";
+        }else{
+            document.getElementById("mensagem").style.background="rgb(209, 209, 209"; 
+        }
     }else{
         document.getElementById("mensagem").style.background="";
     }}
 
-function btnPrincipal() {
-    
+
+
+function btnPrincipal() { 
     const textoEncriptado = encriptar(textArea.value);
     mensagem.value = textoEncriptado;
-    fundo();
-    mensagemImg();
+    fundoTexto();
     textArea.value = "";
 }
 
@@ -51,8 +58,8 @@ function encriptar(stringEncriptada) {
 function btnDescriptografar() {
     const textoDesencriptado = desencriptar(textArea.value);
     mensagem.value = textoDesencriptado;
-    fundo();
-    mensagemImg();
+    
+    fundoTexto();
     textArea.value = "";
 }
 
@@ -78,3 +85,13 @@ function btnCopiar() {
     document.getElementById("mensagem").style.background="";
     mensagem.value = "";
 }
+// Modo Dark //
+//////////////
+
+const btnDark = document.getElementById("btnInput");
+
+btnDark.addEventListener("change", (e) =>{
+    document.body.classList.toggle("dark", e.target.checked);
+    document.getElementById("mensagem").style.background="";
+    mensagem.value = "";
+})

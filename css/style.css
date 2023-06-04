@@ -4,8 +4,11 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 150%;
-    background: #E5E5E5;
+    
+   
 }
+
+
 .logo {
     margin-left: 15px;
     padding-top: 5px;
@@ -13,7 +16,7 @@
 }
 main{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: 80px;
 }
 .text-area{
@@ -23,122 +26,239 @@ main{
     text-transform: lowercase;
 }
 ::placeholder {color: #0A3871;}
-    .text-area:focus{
-        outline: none;
-    }
-    .mensagem{
-        background: white;
+.text-area:focus{
+    outline: none;
+}
+.mensagem{
+    background: rgb(209, 209, 209);
+    background-image: url(imagens/dragao.jpg);
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensagem:focus{
+    outline: none;
+}
+.botoes {
+    display: flex;
+    margin-top: 60px;
+    
+    
+}
+.btn-principal{
+    border: solid 2px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background: #0A3871;
+    color: white;
+    border-color: #0A3871;
+    width: 328px;
+
+}
+.btn-principal:hover{
+    color: #0A3871;
+    background: white;
+    transition: all 1s;
+}
+.btn-descriptografar {
+    border: solid 2px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: #0A3871;
+    border-color: #0A3871;
+    width: 328px;
+}
+.btn-descriptografar:hover,.copiar:hover{
+    color: white;
+    background: #0A3871;
+    transition: all 1s;
+}
+.copiar {
+    border: solid 2px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: #0A3871;
+    border-color: #0A3871;
+    position: fixed;
+    margin-top: 440px;
+    margin-left: 120px;
+    width: 320px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+h6 {
+    color: #3CB371;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+
+
+/* ---------------------------- Modo dark ----------------------*/
+
+
+.modoDark {
+    float: right;
+    padding-right: 50px;
+}
+body.dark ::placeholder {color: #4b4b4b;}
+body.dark .modoDark {
+    float: right;
+    padding-right: 50px;
+}
+body.dark{
+    background: rgb(4, 0, 37);
+}
+
+label{
+    
+    background: url(/css/imagens/lua2.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    user-select: none;
+}
+
+body.dark label{
+    background: url(/css/imagens/sol.png);
+    background-size: 100% 100%;
+}
+#btnInput{
+    visibility: hidden;
+}
+
+body.dark .btn-principal{
+border: solid 2px #4b4b4b;
+color: #4b4b4b;
+font-weight: bold;
+}
+body.dark .btn-principal:hover{
+color:rgb(4, 0, 37);
+background: #4b4b4b;
+border-color: #4b4b4b;
+font-weight: bold;
+}
+body.dark .btn-descriptografar {
+    color:rgb(4, 0, 37);
+    background: #4b4b4b;
+    border-color: #4b4b4b;
+    font-weight: bold;
+}
+
+body.dark .btn-descriptografar:hover{
+    background:  #4b4b4b;
+    background: rgb(4, 0, 37);
+    color: #4b4b4b;
+    border: solid 2px  #4b4b4b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.dark .copiar{
+    color:rgb(4, 0, 37);
+    background: #4b4b4b;
+    border-color: #4b4b4b;
+    font-weight: bold;
+}
+body.dark .copiar:hover{
+    background:  #4b4b4b;
+    background: rgb(4, 0, 37);
+    color: #4b4b4b;
+    border: solid 2px  #4b4b4b;
+    font-weight: bold;
+}
+
+body.dark *{
+    background: rgb(4, 0, 37);
+}
+body.dark h6{
+    color: #4b4b4b;
+    
+}
+
+body.dark .mensagem{
+    
+        background: rgb(255, 255, 255);
         background-image: url(imagens/dragao.jpg);
         border: none;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 25px;
-        color: #0A3871;
+        color: rgb(4, 0, 37);
         margin-left: 98px;
         margin-top: 20px;
         padding-left: 20px;
         position: fixed;
-    }
-    .mensagem:focus{
         outline: none;
-    }
-    .botoes {
-        display: flex;
-        margin-top: 60px;
         
-       
     }
-    .btn-principal{
-        border: solid 2px;
-        border-radius: 10px;
-        margin-left: 20px;
-        background: #0A3871;
-        color: white;
-        border-color: #0A3871;
-        width: 328px;
 
-    }
-    .btn-principal:hover{
-        color: #0A3871;
-        background: white;
-        transition: all 1s;
-    }
-    .btn-descriptografar {
-        border: solid 2px;
-        margin-left: 30px;
-        border-radius: 10px;
-        color: #0A3871;
-        border-color: #0A3871;
-        width: 328px;
-    }
-    .btn-descriptografar:hover,.copiar:hover{
-        color: white;
-        background: #0A3871;
-        transition: all 1s;
-    }
-    .copiar {
-        border: solid 2px;
-        margin-left: 30px;
-        border-radius: 10px;
-        color: #0A3871;
-        border-color: #0A3871;
-        position: fixed;
-        margin-top: 440px;
-        margin-left: 120px;
-        width: 320px;
-        cursor: pointer;
-    }
-    h6 {
-        color: #3CB371;
-        font-size: 16px;
-        margin-bottom: 15px;
-        margin-top: 60px;
-    }
     
-    /* Responsividade do site */
-@media screen and (max-width:480px) {
+    /*------------- Responsividade do site---------------------
+    ------------------------------------------------------------- */
+
+
+@media (min-width:350px) and (max-width:580px) {
     * {
         box-sizing: border-box;
-        
-       
+        font-size: 15px;
        
     }
     header{
-        padding: 0;
-        margin: 0;
-        margin-left: 0;
-        
+        padding-left: 50px; 
     }
+
+   .logo {
+        height: 40px;
+        width: 40px;
+        
+   }
    
     main{
         display: block;
         padding: 0;
         margin: 0;
+        text-align: center;
         
     }
     .text-area{
         height: 100px;
-        width: 100%;
+        width: 80%;
     }
     .logo {
         margin-left: 0;
        
     }
+    button {
+        height: 40px;
+    }
     .botoes{
         display: block;
+        margin-left: 0;
+        text-align: center;
 
     }
     .btn-principal {
         margin-left: 0px;
-        width: 100%;
+        width: 80%;
+        
        
     }
     .btn-descriptografar{
         margin-left: 0px;
         margin-top: 5px;
-        width: 100%;
-        
-    
+        width: 80%;  
+    }
+    .saidaText{
+        text-align: center;
     }
 
     .mensagem {
@@ -146,7 +266,7 @@ main{
         position: static;
         margin-left: 0;
         padding-left: 0;
-        width: 100%;
+        width: 80%;
         
         
 
@@ -155,70 +275,183 @@ main{
         margin-top: 0;
         margin-left: 0;
         position: static;
-        width: 100%;
+        width: 80%;
     }
     }
-    @media screen and (max-width:900px) {
+    @media (min-width:581px) and (max-width:900px) {
         * {
             box-sizing: border-box;
-            
-           
            
         }
         header{
             padding: 0;
             margin: 0;
             margin-left: 0;
-            
+            padding-left: 50px;
         }
-       
+        .logo {
+            height: 40px;
+            width: 40px;
+            
+       }
         main{
             display: block;
             padding: 0;
-            margin: 0;
+            margin: 0 30px 0 30px;
+            
             
         }
         .text-area{
             height: 100px;
             width: 100%;
-        }
-        .logo {
-            margin-left: 0;
            
         }
-        .botoes{
-            display: block;
-    
-        }
+       
+        
         .btn-principal {
-            margin-left: 0px;
-            width: 100%;
+            margin-left: 0;
+            margin-right: 5px;
+            width: 50%;
            
         }
         .btn-descriptografar{
             margin-left: 0px;
-            margin-top: 5px;
-            width: 100%;
+            width: 50%;
             
         
         }
-    
+        .saidaText{
+            text-align: center;
+        }
         .mensagem {
-            height: 450px;
+            height: 350px;
             position: static;
             margin-left: 0;
             padding-left: 0;
-            width: 100%;
+            width: 80%;
+            text-align: center;
             
-            
-    
         }
         .copiar {
             margin-top: 0;
             margin-left: 0;
             position: static;
-            width: 100%;
+            width: 80%;
         }
         
        
 }
+
+
+/* ----- Responsividade DarkMode -------*/
+
+@media (min-width:350px) and (max-width:580px) {
+    body.dark * {
+        box-sizing: border-box;
+    }
+    body.dark  header{
+        padding: 0;
+        margin: 0;
+        margin-left: 0;
+        padding-left: 50px;
+    }
+
+    body.dark main{
+        display: block;
+        padding: 0;
+        margin: 0;
+        
+    }
+    body.dark .text-area{
+        height: 100px;
+        width: 80%;
+    }
+    body.dark .logo {
+        margin-left: 0;
+       
+    }
+    body.dark .botoes{
+        display: block;
+        margin-left: 0;
+
+    }
+    body.dark .btn-principal {
+        margin-left: 0px;
+        width: 80%;
+       
+    }
+    body.dark .btn-descriptografar{
+        margin-left: 0px;
+        margin-top: 5px;
+        width: 80%;
+        
+    
+    }
+
+    body.dark .mensagem {
+        height: 300px;
+        position: static;
+        margin-left: 0;
+        padding-left: 0;
+        width: 80%;
+        
+    
+    }
+    body.dark .saidaText{
+        text-align: center;
+    }
+    body.dark .copiar {
+        position: static;
+        width: 80%;
+    }
+    }
+
+    @media (min-width:581px) and (max-width:900px) {
+        body.dark * {
+            box-sizing: border-box;  
+        }
+        
+       
+       
+        body.dark .text-area{
+            height: 100px;
+            width: 100%;
+           
+        }
+        body.dark .logo {
+            margin-left: 0;
+           
+        }
+        
+        body.dark .btn-principal {
+            margin-right: 10px;
+            width: 50%;
+           
+        }
+        body.dark .btn-descriptografar{
+            width: 50%;
+            
+        
+        }
+        body.dark .saidaText{
+            text-align: center;
+        }
+        body.dark .mensagem {
+            height: 350px;
+            position: static;
+            margin-left: 0;
+            padding-left: 0;
+            width: 80%;
+            text-align: center;
+            
+        }
+        body.dark .copiar {
+            margin-top: 0;
+            margin-left: 0;
+            position: static;
+            width: 80%;
+        }
+       
+    }
+        
+       
