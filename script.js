@@ -24,7 +24,7 @@ function fundoTexto(){
         if(checked2){
             document.getElementById("mensagem").style.background="#4b4b4b";
         }else{
-            document.getElementById("mensagem").style.background="rgb(209, 209, 209"; 
+            document.getElementById("mensagem").style.background="white"; 
         }
     }else{
         document.getElementById("mensagem").style.background="";

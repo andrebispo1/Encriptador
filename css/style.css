@@ -4,11 +4,10 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 150%;
-    
-   
 }
-
-
+body{
+    background: #F3F5FC;
+}
 .logo {
     margin-left: 15px;
     padding-top: 5px;
@@ -30,7 +29,7 @@ main{
     outline: none;
 }
 .mensagem{
-    background: rgb(209, 209, 209);
+    background:white;
     background-image: url(imagens/dragao.jpg);
     border: none;
     background-repeat: no-repeat;
@@ -48,8 +47,6 @@ main{
 .botoes {
     display: flex;
     margin-top: 60px;
-    
-    
 }
 .btn-principal{
     border: solid 2px;
@@ -59,7 +56,6 @@ main{
     color: white;
     border-color: #0A3871;
     width: 328px;
-
 }
 .btn-principal:hover{
     color: #0A3871;
@@ -107,7 +103,11 @@ h6 {
     float: right;
     padding-right: 50px;
 }
-body.dark ::placeholder {color: #4b4b4b;}
+body.dark ::placeholder {color: #fdfdfd;}
+
+body.dark .text-area{
+    color: white;
+}
 body.dark .modoDark {
     float: right;
     padding-right: 50px;
@@ -118,7 +118,7 @@ body.dark{
 
 label{
     
-    background: url(/css/imagens/lua2.png);
+    background: url(/css/imagens/lua.png );
     background-size: 100% 100%;
     cursor: pointer;
     display: inline-block;
@@ -128,7 +128,7 @@ label{
 }
 
 body.dark label{
-    background: url(/css/imagens/sol.png);
+    background: url(/css/imagens/soltrans.png);
     background-size: 100% 100%;
 }
 #btnInput{
