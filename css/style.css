@@ -107,6 +107,7 @@ body.dark ::placeholder {color: #fdfdfd;}
 
 body.dark .text-area{
     color: white;
+    border: solid 2px #4b4b4b;;
 }
 body.dark .modoDark {
     float: right;
@@ -118,7 +119,7 @@ body.dark{
 
 label{
     
-    background: url(/css/imagens/lua.png );
+    background: url(imagens/lua.png);
     background-size: 100% 100%;
     cursor: pointer;
     display: inline-block;
@@ -128,7 +129,7 @@ label{
 }
 
 body.dark label{
-    background: url(/css/imagens/soltrans.png);
+    background: url(imagens/soltrans.png);
     background-size: 100% 100%;
 }
 #btnInput{
