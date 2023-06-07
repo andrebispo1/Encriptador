@@ -165,7 +165,7 @@ body.dark .btn-descriptografar:hover{
 body.dark .copiar{
     color:rgb(4, 0, 37);
     background: #4b4b4b;
-    border-color: #4b4b4b;
+    border-color: rgb(4, 0, 37);
     font-weight: bold;
 }
 body.dark .copiar:hover{
